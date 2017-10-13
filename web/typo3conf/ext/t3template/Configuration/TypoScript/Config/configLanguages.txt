@@ -1,0 +1,117 @@
+// ************************************************************************** //
+//  _____ _________ ___ __  __ ___ _      _ _____ ___
+// |_   _|__ /_   _| __|  \/  | _ \ |    /_\_   _| __|
+//   | |  |_ \ | | | _|| |\/| |  _/ |__ / _ \| | | _|
+//   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
+//
+//
+// EXT: T3Template (t3template)
+// VER: 0.0.1
+//
+// LIC: MIT License
+// AUT: Jan Fässler / jan@faessler.be
+//
+// ************************************************************************** //
+
+
+// ************************************ //
+// ALTERNATIVE LANGUAGES
+// ************************************ //
+// If language UID 1 / FR - French
+[globalVar = GP:L = 1]
+    config {
+        sys_language_uid = 1
+        language = fr
+        locale_all = fr_FR.UTF-8
+        htmlTag_langKey = fr
+    }
+    page.meta.og:locale = fr_FR
+[global]
+
+// If language UID 2 / IT - Italian
+[globalVar = GP:L = 2]
+    config {
+        sys_language_uid = 2
+        language = it
+        locale_all = it_IT.UTF-8
+        htmlTag_langKey = it
+    }
+    page.meta.og:locale = it_IT
+[global]
+
+// If language UID 3 / EN - English
+[globalVar = GP:L = 3]
+    config {
+        sys_language_uid = 3
+        language = en
+        locale_all = en_EN.UTF-8
+        htmlTag_langKey = en
+    }
+    page.meta.og:locale = en_EN
+[global]
+
+// If language UID 4 / NL - Dutch
+[globalVar = GP:L = 4]
+    config {
+        sys_language_uid = 4
+        language = nl
+        locale_all = nl_NL.UTF-8
+        htmlTag_langKey = nl
+    }
+    page.meta.og:locale = nl_NL
+[global]
+
+// If language UID 5 / ES - Spain
+[globalVar = GP:L = 5]
+    config {
+        sys_language_uid = 5
+        language = es
+        locale_all = es_ES.UTF-8
+        htmlTag_langKey = es
+    }
+    page.meta.og:locale = es_ES
+[global]
+
+// If language UID 6 / PT - Portuguese
+[globalVar = GP:L = 6]
+    config {
+        sys_language_uid = 6
+        language = pt
+        locale_all = pt_PT.UTF-8
+        htmlTag_langKey = pt
+    }
+    page.meta.og:locale = pt_PT
+[global]
+
+// If language UID 7 / RU - Russian
+[globalVar = GP:L = 7]
+    config {
+        sys_language_uid = 7
+        language = ru
+        locale_all = ru_RU.UTF-8
+        htmlTag_langKey = ru
+    }
+    page.meta.og:locale = ru_RU
+[global]
+
+// If language UID 8 / ZH - Chinese
+[globalVar = GP:L = 8]
+    config {
+        sys_language_uid = 8
+        language = zh
+        locale_all = zh_CN.UTF-8
+        htmlTag_langKey = zh
+    }
+    page.meta.og:locale = zh_CN
+[global]
+
+// If language UID 9 / JP - Japan
+[globalVar = GP:L = 9]
+    config {
+        sys_language_uid = 9
+        language = jp
+        locale_all = jp_JP.UTF-8
+        htmlTag_langKey = jp
+    }
+    page.meta.og:locale = jp_JP
+[global]

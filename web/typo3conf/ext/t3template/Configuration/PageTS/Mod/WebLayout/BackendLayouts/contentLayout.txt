@@ -1,0 +1,59 @@
+// ************************************************************************** //
+//  _____ _________ ___ __  __ ___ _      _ _____ ___
+// |_   _|__ /_   _| __|  \/  | _ \ |    /_\_   _| __|
+//   | |  |_ \ | | | _|| |\/| |  _/ |__ / _ \| | | _|
+//   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
+//
+//
+// EXT: T3Template (t3template)
+// VER: 0.0.1
+//
+// LIC: MIT License
+// AUT: Jan Fässler / jan@faessler.be
+//
+// ************************************************************************** //
+
+
+// ************************************ //
+// CONTENT BACKENDLAYOUT
+// ************************************ //
+mod {
+    web_layout {
+        BackendLayouts {
+			contentLayout {
+                title = LLL:EXT:t3template/Resources/Private/Language/locallang:contentpage
+                config {
+					backend_layout {
+						colCount = 4
+						rowCount = 2
+						rows {
+							1 {
+								columns {
+									1 {
+										name = LLL:EXT:t3template/Resources/Private/Language/locallang:header
+										colspan = 4
+										colPos = 1
+									}
+								}
+							}
+							2 {
+								columns {
+									1 {
+										name = LLL:EXT:t3template/Resources/Private/Language/locallang:content
+										colspan = 3
+										colPos = 0
+									}
+									2 {
+										name = LLL:EXT:t3template/Resources/Private/Language/locallang:sidebar
+										colPos = 3
+									}
+								}
+							}
+						}
+					}
+                }
+				icon = EXT:t3template/Resources/Public/Images/BackendLayouts/content-layout.png
+            }
+        }
+    }
+}

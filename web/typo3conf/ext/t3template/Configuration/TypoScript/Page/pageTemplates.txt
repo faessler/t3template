@@ -1,0 +1,57 @@
+// ************************************************************************** //
+//  _____ _________ ___ __  __ ___ _      _ _____ ___
+// |_   _|__ /_   _| __|  \/  | _ \ |    /_\_   _| __|
+//   | |  |_ \ | | | _|| |\/| |  _/ |__ / _ \| | | _|
+//   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
+//
+//
+// EXT: T3Template (t3template)
+// VER: 0.0.1
+//
+// LIC: MIT License
+// AUT: Jan Fässler / jan@faessler.be
+//
+// ************************************************************************** //
+
+
+// ************************************ //
+// RENDER FLUID TEMPLATE
+// ************************************ //
+page {
+	typeNum = 0
+	10 = FLUIDTEMPLATE
+	10 {
+		partialRootPath = {$page.template.partialRootPath}
+		layoutRootPath = {$page.template.layoutRootPath}
+
+        // Assign backendlayouts to the corresponding templates
+		file {
+			stdWrap {
+				cObject = CASE
+				cObject {
+					key.data = levelfield:-1, backend_layout, slide
+					key.override.field = backend_layout
+
+					// Default / Content
+					default = TEXT
+					default {
+						value = {$page.template.templateRootPath}/contentLayout.html
+					}
+
+					// Home
+					pagets__homeLayout = TEXT
+					pagets__homeLayout {
+						value = {$page.template.templateRootPath}/homeLayout.html
+						insertData = 1
+					}
+
+					// Content
+					pagets__contentLayout = TEXT
+					pagets__contentLayout {
+						value = {$page.template.templateRootPath}/contentLayout.html
+					}
+				}
+			}
+		}
+	}
+}

@@ -19,7 +19,6 @@
 # ************************************** #
 vendor
 vendor/*
-web
 web/*
 !web/typo3conf
 web/typo3conf/*

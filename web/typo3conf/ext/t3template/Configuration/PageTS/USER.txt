@@ -1,0 +1,97 @@
+// ************************************************************************** //
+//  _____ _________ ___ __  __ ___ _      _ _____ ___
+// |_   _|__ /_   _| __|  \/  | _ \ |    /_\_   _| __|
+//   | |  |_ \ | | | _|| |\/| |  _/ |__ / _ \| | | _|
+//   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
+//
+//
+// EXT: T3Template (t3template)
+// VER: 0.0.1
+//
+// LIC: MIT License
+// AUT: Jan Fässler / jan@faessler.be
+//
+// ************************************************************************** //
+
+
+// ************************************ //
+// SETTINGS FOR ALL USERS
+// ************************************ //
+// OPTIONS
+options {
+    defaultUploadFolder = fileadmin/
+    clipboardNumberPads = 1
+    enableBookmarks = 0
+    saveDocNew = 0
+    disableDelete = 0
+    checkPageLanguageOverlay = 1
+
+    // Extended view for filelist
+    file_list {
+        enableDisplayBigControlPanel = activated
+        enableDisplayThumbnails = activated
+        enableClipBoard = activated
+    }
+}
+
+
+// MOD
+mod {
+    // Extended view for page & list
+    web_list {
+        enableDisplayBigControlPanel = activated
+        enableClipBoard = activated
+        enableLocalizationView = activated
+    }
+
+    // Default language
+    SHARED {
+        defaultLanguageFlag = ch
+        defaultLanguageLabel = Deutsch
+    }
+}
+
+
+
+// ************************************ //
+// SETTINGS ONLY FOR ADMIN USERS
+// ************************************ //
+[adminUser = 1]
+    options {
+        pageTree {
+            showPageIdWithTitle = 1
+            showDomainNameWithTitle = 1
+            showNavTitle = 0
+            showPathAboveMounts = 1
+            searchInAlias = 1
+        }
+
+        // For typo3 below 8.x.x
+        clearCache.system = 1
+    }
+
+    // Admin panel
+    admPanel {
+        enable {
+            preview = 1
+            cache = 1
+            publish = 1
+            edit = 1
+            info = 1
+        }
+        hide = 1
+    }
+[global]
+
+
+
+// ************************************ //
+// SETTINGS ONLY FOR NOT ADMIN USERS
+// ************************************ //
+[adminUser = 0]
+    options {
+        pageTree {
+            doktypesToShowInNewPageDragArea	= 1,4,3
+        }
+    }
+[global]
