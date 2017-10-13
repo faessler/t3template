@@ -1,0 +1,71 @@
+{
+    "name": "T3Template/typo3",
+    "description": "TYPO3 development template with customisable template extension",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.typo3.org/"
+        }
+    ],
+
+    "require": {
+
+        "typo3/cms": "^8.7",
+
+        "helhum/typo3-console": "^4.6",
+
+        "typo3/cms-belog": "^8.7",
+        "typo3/cms-beuser": "^8.7",
+        "typo3/cms-context-help": "^8.7",
+        "typo3/cms-fluid-styled-content": "^8.7",
+        "typo3/cms-felogin": "^8.7",
+        "typo3/cms-filelist": "^8.7",
+        "typo3/cms-impexp": "^8.7",
+        "typo3/cms-info": "^8.7",
+        "typo3/cms-info-pagetsconfig": "^8.7",
+        "typo3/cms-lowlevel": "^8.7",
+        "typo3/cms-reports": "^8.7",
+        "typo3/cms-rte-ckeditor": "^8.7",
+        "typo3/cms-setup": "^8.7",
+        "typo3/cms-tstemplate": "^8.7",
+        "typo3/cms-viewpage": "^8.7",
+
+        "typo3-ter/realurl": "*",
+        "gridelementsteam/gridelements": "dev-master",
+
+        "typo3-ter/mask": "*",
+        "typo3-ter/mask-export": "0.8.0"
+    },
+
+    "scripts": {
+        "linkAdditionalConfiguration": [
+            "typo3cms configuration:includeadditionalconfiguration"
+        ],
+        "installSchedulerTasks": [
+            "typo3cms scheduledtasks:install"
+        ],
+        "updateLanguagePacks": [
+            "typo3cms language:update"
+        ]
+    },
+
+    "autoload": {
+        "psr-4": {
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TYPO3\\CMS\\Core\\Tests\\": "typo3/sysext/core/Tests/"
+        }
+    },
+
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "web"
+        },
+        "helhum/typo3-console": {
+            "install-extension-dummy": false
+        }
+    }
+}
