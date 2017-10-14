@@ -15,6 +15,16 @@
 
 
 // ************************************ //
+// INCLUDE TYPO3 EXTENSIONS
+// ************************************ //
+<INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/fluid_styled_content/setup.txt">
+// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/gridelements/setup.txt">
+// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/form/setup.txt">
+// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/indexed_search/setup.txt">
+
+
+
+// ************************************ //
 // INCLUDE CONFIGS
 // ************************************ //
 <INCLUDE_TYPOSCRIPT: source="FILE:./Config/config.txt">
@@ -35,13 +45,3 @@
 // INCLUDE CONTENT ELEMENTS
 // ************************************ //
 <INCLUDE_TYPOSCRIPT: source="DIR:./Content" extensions="txt">
-
-
-
-// ************************************ //
-// INCLUDE TYPO3 EXTENSIONS
-// ************************************ //
-<INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/fluid_styled_content/setup.ts">
-// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/gridelements/setup.ts">
-// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/form/setup.ts">
-// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/indexed_search/setup.ts">

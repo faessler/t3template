@@ -53,5 +53,37 @@ page {
 				}
 			}
 		}
+
+        // Render Contents
+        variables {
+            header = CONTENT
+			header {
+				table = tt_content
+				select {
+					languageField = sys_language_uid
+					where = colPos = 1
+				}
+            }
+            content < styles.content.get
+            content {
+                select.languageField = sys_language_uid
+            }
+            sidebar = CONTENT
+			sidebar {
+				table = tt_content
+				select {
+					languageField = sys_language_uid
+					where = colPos = 3
+				}
+            }
+            row2 = CONTENT
+            row2 {
+                table = tt_content
+                select {
+                    languageField = sys_language_uid
+                    where = colPos = 2
+                }
+            }
+        }
 	}
 }

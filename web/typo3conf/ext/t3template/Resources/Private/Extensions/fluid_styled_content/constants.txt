@@ -1,0 +1,62 @@
+// ************************************************************************** //
+//  _____ _________ ___ __  __ ___ _      _ _____ ___
+// |_   _|__ /_   _| __|  \/  | _ \ |    /_\_   _| __|
+//   | |  |_ \ | | | _|| |\/| |  _/ |__ / _ \| | | _|
+//   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
+//
+//
+// EXT: T3Template (t3template)
+// VER: 0.0.1
+//
+// LIC: MIT License
+// AUT: Jan Fässler / jan@faessler.be
+//
+// ************************************************************************** //
+
+
+// ************************************ //
+// INCLUDE DEFAULT CONSTANTS TS
+// ************************************ //
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
+
+
+
+// ************************************ //
+// CUSTOMIZE CONSTANTS SETTINGS
+// ************************************ //
+styles.templates {
+    templateRootPath = EXT:t3template/Resources/Private/Extensions/fluid_styled_content/Templates
+    partialRootPath = EXT:t3template/Resources/Private/Extensions/fluid_styled_content/Partials
+    layoutRootPath = EXT:t3template/Resources/Private/Extensions/fluid_styled_content/Layouts
+}
+
+styles.content {
+    defaultHeaderType = 2
+    shortcut.tables = tt_content
+    allowTags = a, abbr, acronym, address, article, aside, b, bdo, big, blockquote, br, caption, center, cite, code, col, colgroup, dd, del, dfn, dl, div, dt, em, font, footer, header, h1, h2, h3, h4, h5, h6, hr, i, img, ins, kbd, label, li, link, meta, nav, ol, p, pre, q, samp, sdfield, section, small, span, strike, strong, style, sub, sup, table, thead, tbody, tfoot, td, th, tr, title, tt, u, ul, var
+
+    textmedia {
+        maxW = 600
+        maxWInText = 300
+
+        columnSpacing = 10
+        rowSpacing = 10
+        textMargin = 10
+
+        borderColor = #000000
+        borderWidth = 2
+        borderPadding = 0
+
+        linkWrap.width = 800m
+        linkWrap.height = 600m
+        linkWrap.newWindow = 0
+        linkWrap.lightboxEnabled = 0
+        linkWrap.lightboxCssClass = lightbox
+        linkWrap.lightboxRelAttribute = lightbox[{field:uid}]
+    }
+
+    links {
+        extTarget = _blank
+        keep = path
+    }
+}
