@@ -25,7 +25,7 @@ $EM_CONF[$_EXTKEY] = array (
     'version' => '0.0.1',
     'state' => 'beta',
 
-    'createDirs' => 'fileadmin/documents, fileadmin/images, fileadmin/media',
+    'createDirs' => 'fileadmin/images, fileadmin/documents, fileadmin/medias',
     'clearCacheOnLoad' => 1,
     'uploadfolder' => 0,
 
