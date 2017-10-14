@@ -24,7 +24,7 @@ lib.companyName {
 lib.legalForm = TEXT
 lib.legalForm {
 	insertData = 1
-	value = {LLL:EXT:{$languageDir}/locallang.xlf:legalform.{$plugin.t3template.legalform}}
+    value = {LLL:{$languageDir}/locallang.xlf:legalform.{$plugin.t3template.legalform}}
 }
 lib.street = TEXT
 lib.street {
@@ -44,11 +44,11 @@ lib.country {
 }
 lib.countryCode = TEXT
 lib.countryCode {
-	value = {$plugin.t3template.countryCode}
+	value = {$plugin.t3template.countrycode}
 }
 lib.plz = TEXT
 lib.plz {
-	value = {$plugin.t3template.plz}
+	value = {$plugin.t3template.zip}
 }
 lib.city = TEXT
 lib.city {
@@ -60,7 +60,7 @@ lib.phone {
 }
 lib.mobile = TEXT
 lib.mobile {
-	value = {$plugin.t3template.mobile}
+	value = {$plugin.t3template.mobilephone}
 }
 lib.fax = TEXT
 lib.fax {
