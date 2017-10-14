@@ -20,6 +20,7 @@
 // RESOURCES
 resDir = EXT:t3template/Resources
 privateDir = {$resDir}/Private
+languageDir = {$privateDir}/Language
 publicDir = {$resDir}/Public
 cssDir = {$publicDir}/Css
 jsDir = {$publicDir}/JavaScript
@@ -47,6 +48,7 @@ page {
 # customsubcategory=130=Options
 # customsubcategory=140=Important Pages
 # customsubcategory=150=Customer Informations
+# customsubcategory=160=Customer Files
 
 
 // CONSTANTS
@@ -166,4 +168,13 @@ plugin.t3template {
 
     # cat=t3template/150/013; type=string; label=E-Mail:
     email = (((CUSTOM_EMAIL)))
+
+
+
+    # CUSTOMER FILES
+    # cat=t3template/160/001; type=string; label=Logo: SVG
+    svglogo = /typo3conf/ext/t3template/Resources/Public/Images/logo.svg
+
+    # cat=t3template/160/002; type=string; label=: PNG
+    pnglogo = /typo3conf/ext/t3template/Resources/Public/Images/logo.png
 }

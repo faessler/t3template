@@ -1,0 +1,69 @@
+// ************************************************************************** //
+//  _____ _________ ___ __  __ ___ _      _ _____ ___
+// |_   _|__ /_   _| __|  \/  | _ \ |    /_\_   _| __|
+//   | |  |_ \ | | | _|| |\/| |  _/ |__ / _ \| | | _|
+//   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
+//
+//
+// EXT: T3Template (t3template)
+// VER: 0.0.1
+//
+// LIC: MIT License
+// AUT: Jan Fässler / jan@faessler.be
+//
+// ************************************************************************** //
+
+
+// ************************************ //
+// MOBILE LANG NAV - FOR MMENU
+// ************************************ //
+lib.mobileLangNav = HMENU
+lib.mobileLangNav {
+	special = language
+	special.value = 0,1,2,3,4,5,6,7,8,9
+	special.normalWhenNoLanguage = 0
+	wrap (
+		<li class="mm-divider mmenu__lang">
+			<span>sprache</span>
+			<span>langue</span>
+			<span>lingua</span>
+			<span>language</span>
+			<span>taal</span>
+			<span>lengua</span>
+			<span>idioma</span>
+			<span>язык</span>
+			<span>语言</span>
+			<span>言語</span>
+		</li>
+		|
+	)
+	1 = TMENU
+	1 {
+		noBlur = 1
+		NO = 1
+		NO {
+			linkWrap = <li>|</li>
+			stdWrap.override = Deutsch || Français || Italiano || English || Nederlands || Español || Portuguese || русский || 中文 || 日语
+			doNotLinkIt = 1
+			stdWrap.typolink.parameter.data = page:uid
+			stdWrap.typolink.additionalParams = &L=0 || &L=1 || &L=2 || &L=3 || &L=4 || &L=5 || &L=6 || &L=7 || &L=8 || &L=9
+			stdWrap.typolink.addQueryString = 1
+			stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
+			stdWrap.typolink.addQueryString.method = GET
+			stdWrap.typolink.useCacheHash = 1
+			stdWrap.typolink.no_cache = 0
+		}
+		ACT < .NO
+		ACT.linkWrap = <li class="mmenu__lactive">|</li>
+		USERDEF1 < .NO
+		USERDEF1 {
+			stdWrap.typolink >
+			doNotShowLink = 1
+		}
+		USERDEF2 < .ACT
+		USERDEF2 {
+			stdWrap.typolink >
+			doNotShowLink = 1
+		}
+	}
+}
