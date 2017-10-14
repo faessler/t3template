@@ -25,6 +25,16 @@ if (!defined('TYPO3_MODE')) {
 
 
 // ************************************ //
+// TYPO3 BACKEND LOGIN
+// ************************************ //
+$backendExtConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['backend']);
+$backendExtConf['loginLogo'] = 'EXT:' . $_EXTKEY . '/Resources/Public/Images/logo.svg';
+$backendExtConf['loginBackgroundImage'] = 'EXT:' . $_EXTKEY . '/Resources/Public/Images/login-background.jpg';
+$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['backend'] = serialize($backendExtConf);
+
+
+
+// ************************************ //
 // TYPOSCRIPT INCLUSION
 // ************************************ //
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
