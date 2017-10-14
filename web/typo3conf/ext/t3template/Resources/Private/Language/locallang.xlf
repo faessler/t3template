@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3template">
+		<header/>
+		<body>
+            <!-- LEGALFORM -->
+            <trans-unit id="legalform.sole-proprietorship">
+                <source>Sole Proprietorship</source>
+            </trans-unit>
+            <trans-unit id="legalform.limited-liability-company">
+                <source>LLC</source>
+            </trans-unit>
+            <trans-unit id="legalform.limited">
+                <source>LTD.</source>
+            </trans-unit>
+            <trans-unit id="legalform.corporation">
+                <source>Corp.</source>
+            </trans-unit>
+            <trans-unit id="legalform.incorporated">
+                <source>Inc.</source>
+            </trans-unit>
+            <trans-unit id="legalform.general-partnership">
+                <source>OG</source>
+            </trans-unit>
+            <trans-unit id="legalform.limited-partnership">
+                <source>KG</source>
+            </trans-unit>
+            <trans-unit id="legalform.association">
+                <source>Association</source>
+            </trans-unit>
+            <trans-unit id="legalform.club">
+                <source>Club</source>
+            </trans-unit>
+            <trans-unit id="legalform.foundation">
+                <source>Foundation</source>
+            </trans-unit>
+            <trans-unit id="legalform.cooperative">
+                <source>co-op</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
