@@ -72,8 +72,6 @@ page {
 		appCss = {$cssDir}/app.css
 	}
 	includeJSFooterlibs {
-	}
-	includeJSFooterlibs {
 		appJs = {$jsDir}/app.js
 	}
 }

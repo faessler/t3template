@@ -1,0 +1,27 @@
+{
+  "name": "t3template",
+  "version": "0.0.1",
+  "description": "TYPO3 development template with customisable template extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Fässler",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-webpack": "^1.5.0",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.4.4-rc1",
+    "jquery": "^3.2.1",
+    "zepto": "^1.2.0"
+  }
+}
