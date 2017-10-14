@@ -52,7 +52,7 @@ mod {
 						}
 					}
                 }
-				icon = EXT:t3template/Resources/Public/Images/BackendLayouts/content-layout.png
+				icon = EXT:t3template/Resources/Public/Icons/BackendLayouts/header-top.svg
             }
         }
     }

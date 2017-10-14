@@ -101,7 +101,13 @@ gulp.task('js', gulp.parallel('js:app', 'js:dist'));
 // IMAGES
 // Automatically optimize the images
 gulp.task('img:images', function () {
-    return gulp.src([src+'/img/**/*.jpg', src+'/img/**/*.jpeg', src+'/img/**/*.png', src+'/img/**/*.gif', src+'/img/**/*.svg'])
+    return gulp.src([
+        src+'/img/images/**/*.jpg',
+        src+'/img/images/**/*.jpeg',
+        src+'/img/images/**/*.png',
+        src+'/img/images/**/*.gif',
+        src+'/img/images/**/*.svg'
+    ])
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.jpegtran({progressive: true}),
@@ -113,7 +119,13 @@ gulp.task('img:images', function () {
 
 // Automatically optimize the icons
 gulp.task('img:icons', function () {
-    return gulp.src([src+'/icons/**/*.jpg', src+'/icons/**/*.jpeg', src+'/icons/**/*.png', src+'/icons/**/*.gif', src+'/icons/**/*.svg'])
+    return gulp.src([
+        src+'/img/icons/**/*.jpg',
+        src+'/img/icons/**/*.jpeg',
+        src+'/img/icons/**/*.png',
+        src+'/img/icons/**/*.gif',
+        src+'/img/icons/**/*.svg'
+    ])
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.jpegtran({progressive: true}),
@@ -136,11 +148,34 @@ gulp.task('watch', function(done){
 
     gulp.watch(src+'/js/**/*.js').on('change', gulp.parallel('js'));
 
-    gulp.watch([src+'/img/**/*.jpg', src+'/img/**/*.jpeg', src+'/img/**/*.png', src+'/img/**/*.gif', src+'/img/**/*.svg']).on('added', gulp.parallel('img:images'));
-    gulp.watch([src+'/img/**/*.jpg', src+'/img/**/*.jpeg', src+'/img/**/*.png', src+'/img/**/*.gif', src+'/img/**/*.svg']).on('deleted', gulp.parallel('img:images'));
-    gulp.watch([src+'/icons/**/*.jpg', src+'/icons/**/*.jpeg', src+'/icons/**/*.png', src+'/icons/**/*.gif', src+'/icons/**/*.svg']).on('added', gulp.parallel('img:icons'));
-    gulp.watch([src+'/icons/**/*.jpg', src+'/icons/**/*.jpeg', src+'/icons/**/*.png', src+'/icons/**/*.gif', src+'/icons/**/*.svg']).on('deleted', gulp.parallel('img:icons'));
-
+    gulp.watch([
+        src+'/img/images/**/*.jpg',
+        src+'/img/images/**/*.jpeg',
+        src+'/img/images/**/*.png',
+        src+'/img/images/**/*.gif',
+        src+'/img/images/**/*.svg'
+    ]).on('added', gulp.parallel('img:images'));
+    gulp.watch([
+        src+'/img/images/**/*.jpg',
+        src+'/img/images/**/*.jpeg',
+        src+'/img/images/**/*.png',
+        src+'/img/images/**/*.gif',
+        src+'/img/images/**/*.svg'
+    ]).on('deleted', gulp.parallel('img:images'));
+    gulp.watch([
+        src+'/img/icons/**/*.jpg',
+        src+'/img/icons/**/*.jpeg',
+        src+'/img/icons/**/*.png',
+        src+'/img/icons/**/*.gif',
+        src+'/img/icons/**/*.svg'
+    ]).on('added', gulp.parallel('img:icons'));
+    gulp.watch([
+        src+'/img/icons/**/*.jpg',
+        src+'/img/icons/**/*.jpeg',
+        src+'/img/icons/**/*.png',
+        src+'/img/icons/**/*.gif',
+        src+'/img/icons/**/*.svg'
+    ]).on('deleted', gulp.parallel('img:icons'));
     done();
 });
 

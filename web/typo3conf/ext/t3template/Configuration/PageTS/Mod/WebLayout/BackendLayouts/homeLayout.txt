@@ -55,7 +55,7 @@ mod {
 						}
 					}
                 }
-                icon = EXT:t3template/Resources/Public/Images/BackendLayouts/home-layout.png
+                icon = EXT:t3template/Resources/Public/Icons/BackendLayouts/content-only.svg
             }
         }
     }
