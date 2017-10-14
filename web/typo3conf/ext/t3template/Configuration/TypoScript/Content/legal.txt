@@ -15,10 +15,10 @@
 
 
 // ************************************ //
-// IMPRESSUM LINK
+// LEGAL / IMPRESSUM PAGE LINK
 // ************************************ //
-lib.impressum = TEXT
-lib.impressum {
-	data = page:{$plugin.t3template.impressum}
-	typolink.parameter = {$plugin.t3template.impressum}
+lib.legal = TEXT
+lib.legal {
+	data = page:{$plugin.t3template.legal}
+	typolink.parameter = {$plugin.t3template.legal}
 }
