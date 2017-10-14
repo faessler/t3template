@@ -39,6 +39,6 @@ $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['backend'] = serialize($backendExt
 // ************************************ //
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $_EXTKEY,
-    'Configuration/TypoScript',
-    't3template'
+    'Configuration/TypoScript/',
+    $_EXTKEY
 );

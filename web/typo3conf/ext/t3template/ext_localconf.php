@@ -27,6 +27,11 @@ if (!defined('TYPO3_MODE')) {
 // ************************************ //
 // TSCONFIG INCLUSION
 // ************************************ //
+// BACKENDLAYOUTS
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">'
+);
+
 // TCEMAIN
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/PageTS/TCEMAIN.txt">'
