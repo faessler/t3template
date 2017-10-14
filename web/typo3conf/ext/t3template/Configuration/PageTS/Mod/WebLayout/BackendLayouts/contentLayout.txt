@@ -21,7 +21,7 @@ mod {
     web_layout {
         BackendLayouts {
 			contentLayout {
-                title = LLL:EXT:t3template/Resources/Private/Language/locallang:contentpage
+                title = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.contentlayout
                 config {
 					backend_layout {
 						colCount = 4
@@ -30,7 +30,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:t3template/Resources/Private/Language/locallang:header
+										name = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.header
 										colspan = 4
 										colPos = 1
 									}
@@ -39,12 +39,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:t3template/Resources/Private/Language/locallang:content
+										name = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.content
 										colspan = 3
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:t3template/Resources/Private/Language/locallang:sidebar
+										name = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.sidebar
 										colPos = 3
 									}
 								}
@@ -52,7 +52,7 @@ mod {
 						}
 					}
                 }
-				icon = EXT:t3template/Resources/Public/Icons/BackendLayouts/header-top.svg
+				icon = EXT:t3template/Resources/Public/Icons/BackendLayouts/header-top-sidebar-right.png
             }
         }
     }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3template">
+		<header/>
+		<body>
+            <!-- BACKENDLAYOUTS -->
+            <trans-unit id="backendlayouts.homelayout">
+                <source>Home Layout</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.contentlayout">
+                <source>Content Layout</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.header">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.footer">
+                <source>Footer</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.sidebar">
+                <source>Sidebar</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.row1">
+                <source>Row 1</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.row2">
+                <source>Row 2</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.column1">
+                <source>Column 1</source>
+            </trans-unit>
+            <trans-unit id="backendlayouts.column2">
+                <source>Column 2</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>
