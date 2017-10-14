@@ -41,12 +41,12 @@ page {
 // CONSTANT EDITOR
 // ************************************ //
 // SUB CATEGORIES
-# customsubcategory = 100 = Configuration
-# customsubcategory = 110 = CSS & JS
-# customsubcategory = 120 = Libraries & Frameworks
-# customsubcategory = 130 = Options
-# customsubcategory = 140 = Important Pages
-# customsubcategory = 150 = Customer Informations
+# customsubcategory=100=Configuration
+# customsubcategory=110=CSS & JS
+# customsubcategory=120=Libraries & Frameworks
+# customsubcategory=130=Options
+# customsubcategory=140=Important Pages
+# customsubcategory=150=Customer Informations
 
 
 // CONSTANTS
