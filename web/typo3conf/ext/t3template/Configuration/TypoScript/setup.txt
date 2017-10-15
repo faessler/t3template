@@ -18,8 +18,8 @@
 // INCLUDE TYPO3 EXTENSIONS
 // ************************************ //
 <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/fluid_styled_content/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/form/setup.txt">
 // <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/gridelements/setup.txt">
-// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/form/setup.txt">
 // <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/indexed_search/setup.txt">
 
 

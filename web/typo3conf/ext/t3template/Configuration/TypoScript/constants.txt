@@ -19,7 +19,6 @@
 // ************************************ //
 <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/fluid_styled_content/constants.txt">
 // <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/gridelements/constants.txt">
-// <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/form/constants.txt">
 // <INCLUDE_TYPOSCRIPT: source="FILE:./../../Resources/Private/Extensions/indexed_search/constants.txt">
 
 
