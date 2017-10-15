@@ -1,0 +1,32 @@
+backend_layout {
+    colCount = 3
+    rowCount = 2
+    rows {
+        1 {
+            columns {
+                1 {
+                    name = Left
+                    rowspan = 2
+                    colPos = 11
+                }
+                2 {
+                    name = Top
+                    colspan = 2
+                    colPos = 12
+                }
+            }
+        }
+        2 {
+            columns {
+                1 {
+                    name = BottomLeft
+                    colPos = 22
+                }
+                2 {
+                    name = BottomRight
+                    colPos = 23
+                }
+            }
+        }
+    }
+}
