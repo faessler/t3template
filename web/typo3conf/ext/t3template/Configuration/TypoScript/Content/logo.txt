@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -17,11 +17,11 @@
 // ************************************ //
 // LOGO
 // ************************************ //
-[globalString = {$plugin.t3template.svglogo}]
+[globalString = {$plugin.(((CUSTOM_EXTKEY))).svglogo}]
 	lib.logo = IMAGE
 	lib.logo {
-		file = {$plugin.t3template.svglogo}
-		params = onerror="this.src='{$plugin.t3template.pnglogo}'; this.onerror=null;"
+		file = {$plugin.(((CUSTOM_EXTKEY))).svglogo}
+		params = onerror="this.src='{$plugin.(((CUSTOM_EXTKEY))).pnglogo}'; this.onerror=null;"
 		imageLinkWrap = 1
 		imageLinkWrap {
 			enable = 1
@@ -31,7 +31,7 @@
 [else]
 	lib.logo = IMAGE
 	lib.logo {
-		file = {$plugin.t3template.pnglogo}
+		file = {$plugin.(((CUSTOM_EXTKEY))).pnglogo}
 		imageLinkWrap = 1
 		imageLinkWrap {
 			enable = 1

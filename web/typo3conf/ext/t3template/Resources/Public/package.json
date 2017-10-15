@@ -1,5 +1,5 @@
 {
-  "name": "t3template",
+  "name": "(((CUSTOM_EXTKEY)))",
   "version": "0.0.1",
   "description": "TYPO3 development template with customisable template extension",
   "main": "index.js",

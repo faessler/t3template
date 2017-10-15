@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -25,9 +25,9 @@
 // CUSTOMIZE CONSTANTS SETTINGS
 // ************************************ //
 styles.templates {
-    templateRootPath = EXT:t3template/Resources/Private/Extensions/fluid_styled_content/Templates
-    partialRootPath = EXT:t3template/Resources/Private/Extensions/fluid_styled_content/Partials
-    layoutRootPath = EXT:t3template/Resources/Private/Extensions/fluid_styled_content/Layouts
+    templateRootPath = EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Extensions/fluid_styled_content/Templates
+    partialRootPath = EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Extensions/fluid_styled_content/Partials
+    layoutRootPath = EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Extensions/fluid_styled_content/Layouts
 }
 
 styles.content {

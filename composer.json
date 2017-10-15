@@ -1,5 +1,5 @@
 {
-    "name": "T3Template/typo3",
+    "name": "(((CUSTOM_EXTKEY_UPPER_CAMEL_CASE)))/typo3",
     "description": "TYPO3 development template with customisable template extension",
     "repositories": [
         {

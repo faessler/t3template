@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -19,6 +19,6 @@
 // ************************************ //
 lib.legal = TEXT
 lib.legal {
-	data = page:{$plugin.t3template.legal}
-	typolink.parameter = {$plugin.t3template.legal}
+	data = page:{$plugin.(((CUSTOM_EXTKEY))).legal}
+	typolink.parameter = {$plugin.(((CUSTOM_EXTKEY))).legal}
 }

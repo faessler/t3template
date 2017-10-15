@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -19,57 +19,57 @@
 // ************************************ //
 lib.companyName = TEXT
 lib.companyName {
-	value = {$plugin.t3template.companyname}
+	value = {$plugin.(((CUSTOM_EXTKEY))).companyname}
 }
 lib.legalForm = TEXT
 lib.legalForm {
 	insertData = 1
-    value = {LLL:{$languageDir}/locallang.xlf:legalform.{$plugin.t3template.legalform}}
+    value = {LLL:{$languageDir}/locallang.xlf:legalform.{$plugin.(((CUSTOM_EXTKEY))).legalform}}
 }
 lib.street = TEXT
 lib.street {
-	value = {$plugin.t3template.street}
+	value = {$plugin.(((CUSTOM_EXTKEY))).street}
 }
 lib.streetNr = TEXT
 lib.streetNr {
-	value = {$plugin.t3template.streetnr}
+	value = {$plugin.(((CUSTOM_EXTKEY))).streetnr}
 }
 lib.streetNrSuffix = TEXT
 lib.streetNrSuffix {
-    value = {$plugin.t3template.streetnrsuffix}
+    value = {$plugin.(((CUSTOM_EXTKEY))).streetnrsuffix}
 }
 lib.country = TEXT
 lib.country {
-	value = {$plugin.t3template.country}
+	value = {$plugin.(((CUSTOM_EXTKEY))).country}
 }
 lib.countryCode = TEXT
 lib.countryCode {
-	value = {$plugin.t3template.countrycode}
+	value = {$plugin.(((CUSTOM_EXTKEY))).countrycode}
 }
 lib.plz = TEXT
 lib.plz {
-	value = {$plugin.t3template.zip}
+	value = {$plugin.(((CUSTOM_EXTKEY))).zip}
 }
 lib.city = TEXT
 lib.city {
-	value = {$plugin.t3template.city}
+	value = {$plugin.(((CUSTOM_EXTKEY))).city}
 }
 lib.phone = TEXT
 lib.phone {
-	value = {$plugin.t3template.phone}
+	value = {$plugin.(((CUSTOM_EXTKEY))).phone}
 }
 lib.mobile = TEXT
 lib.mobile {
-	value = {$plugin.t3template.mobilephone}
+	value = {$plugin.(((CUSTOM_EXTKEY))).mobilephone}
 }
 lib.fax = TEXT
 lib.fax {
-	value = {$plugin.t3template.fax}
+	value = {$plugin.(((CUSTOM_EXTKEY))).fax}
 }
 lib.email = TEXT
 lib.email {
-	value = {$plugin.t3template.email}
-	typolink.parameter = {$plugin.t3template.email}
+	value = {$plugin.(((CUSTOM_EXTKEY))).email}
+	typolink.parameter = {$plugin.(((CUSTOM_EXTKEY))).email}
 	typolink.parameter.insertData = 1
 	typolink.ATagParams = itemprop="email"
 }

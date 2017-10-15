@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -21,7 +21,7 @@ mod {
     web_layout {
         BackendLayouts {
 			contentLayout {
-                title = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.contentlayout
+                title = LLL:EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Language/backend:backendlayouts.contentlayout
                 config {
 					backend_layout {
 						colCount = 4
@@ -30,7 +30,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.header
+										name = LLL:EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Language/backend:backendlayouts.header
 										colspan = 4
 										colPos = 1
 									}
@@ -39,12 +39,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.content
+										name = LLL:EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Language/backend:backendlayouts.content
 										colspan = 3
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:t3template/Resources/Private/Language/backend:backendlayouts.sidebar
+										name = LLL:EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Language/backend:backendlayouts.sidebar
 										colPos = 3
 									}
 								}
@@ -52,7 +52,7 @@ mod {
 						}
 					}
                 }
-				icon = EXT:t3template/Resources/Public/Icons/BackendLayouts/header-top-sidebar-right.png
+				icon = EXT:(((CUSTOM_EXTKEY)))/Resources/Public/Icons/BackendLayouts/header-top-sidebar-right.png
             }
         }
     }

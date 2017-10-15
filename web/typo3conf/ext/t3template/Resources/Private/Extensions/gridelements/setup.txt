@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -31,7 +31,7 @@ tt_content.gridelements_pi1.20.10.setup {
         # FLUIDTEMPLATE konfigurieren
         cObject = FLUIDTEMPLATE
         cObject {
-            file = FILE:EXT:t3template/Resources/Extensions/gridelements/Templates/twoColumns.html
+            file = FILE:EXT:(((CUSTOM_EXTKEY)))/Resources/Extensions/gridelements/Templates/twoColumns.html
         }
     }
 }

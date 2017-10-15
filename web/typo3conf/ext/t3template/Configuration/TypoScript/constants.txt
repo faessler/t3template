@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -26,7 +26,7 @@
 // EXTENSION SOURCE VARIABLES
 // ************************************ //
 // RESOURCES
-resDir = EXT:t3template/Resources
+resDir = EXT:(((CUSTOM_EXTKEY)))/Resources
 privateDir = {$resDir}/Private
 languageDir = {$privateDir}/Language
 publicDir = {$resDir}/Public
@@ -60,129 +60,129 @@ page {
 
 
 // CONSTANTS
-plugin.t3template {
+plugin.(((CUSTOM_EXTKEY))) {
     // CONFIGURATION
-    # cat=t3template/100/001; type=boolean; label=E-Mail spam protection: The mailto for E-Mail links from <a href="mailto:some@mail.com"></a> will be replaced with JavaScript to protect the E-Mail from spam.
+    # cat=(((CUSTOM_EXTKEY)))/100/001; type=boolean; label=E-Mail spam protection: The mailto for E-Mail links from <a href="mailto:some@mail.com"></a> will be replaced with JavaScript to protect the E-Mail from spam.
     spamProtectEmailAddresses = 1
 
-    # cat=t3template/100/002; type=string; label=:The @ symbol from E-Mail addresses will be replaced from the following content. This makes it harder for robots to find the E-Mail addresses and send spam to them.
+    # cat=(((CUSTOM_EXTKEY)))/100/002; type=string; label=:The @ symbol from E-Mail addresses will be replaced from the following content. This makes it harder for robots to find the E-Mail addresses and send spam to them.
     spamProtectEmailAddresses_atSubst = (at)
 
-    # cat=t3template/100/003; type=boolean; label=Admin Panel: Shows the TYPO3 Admin Panel in the frontend if checked.
+    # cat=(((CUSTOM_EXTKEY)))/100/003; type=boolean; label=Admin Panel: Shows the TYPO3 Admin Panel in the frontend if checked.
     admPanel = 0
 
-    # cat=t3template/100/004; type=boolean; label=Disable Cache: The cache will be disabled when checked.
+    # cat=(((CUSTOM_EXTKEY)))/100/004; type=boolean; label=Disable Cache: The cache will be disabled when checked.
     no_cache = 0
 
-    # cat=t3template/100/005; type=boolean; label=Remove HTML Comments: Multiline and long html comments will be removed if checked.
+    # cat=(((CUSTOM_EXTKEY)))/100/005; type=boolean; label=Remove HTML Comments: Multiline and long html comments will be removed if checked.
     disablePrefixComment = 1
 
-    # cat=t3template/100/006; type=boolean; label=Development Mode: The development mode will be activated when checked. Impact: config.debug=1, config.contentObjectExceptionHandler=0, disablePrefixComment = 0, no_cache = 1, page.meta.robots=noindex,nofollow. SHOULD BE REMOVED FOR PRODUCTION!
+    # cat=(((CUSTOM_EXTKEY)))/100/006; type=boolean; label=Development Mode: The development mode will be activated when checked. Impact: config.debug=1, config.contentObjectExceptionHandler=0, disablePrefixComment = 0, no_cache = 1, page.meta.robots=noindex,nofollow. SHOULD BE REMOVED FOR PRODUCTION!
     developmentMode = 1
 
 
     # CSS & JS
-    # cat=t3template/110/001; type=boolean; label=CSS compress: If checked all included CSS files will be compressed.
+    # cat=(((CUSTOM_EXTKEY)))/110/001; type=boolean; label=CSS compress: If checked all included CSS files will be compressed.
     compressCss = 1
 
-    # cat=t3template/110/002; type=boolean; label=CSS concat: If checked all included CSS files will be merged to one file.
+    # cat=(((CUSTOM_EXTKEY)))/110/002; type=boolean; label=CSS concat: If checked all included CSS files will be merged to one file.
     concatenateCss = 1
 
-    # cat=t3template/110/003; type=boolean; label=JavaScript compress: If checked all included JavaScript files will be compressed.
+    # cat=(((CUSTOM_EXTKEY)))/110/003; type=boolean; label=JavaScript compress: If checked all included JavaScript files will be compressed.
     compressJs = 1
 
-    # cat=t3template/110/004; type=boolean; label=JavaScript concat: If checked all included JavaScript files will be merged to one file.
+    # cat=(((CUSTOM_EXTKEY)))/110/004; type=boolean; label=JavaScript concat: If checked all included JavaScript files will be merged to one file.
     concatenateJs = 1
 
-    # cat=t3template/110/005; type=boolean; label=Move JavaScript to footer: If checked all included JavaScript files will be included before body tag is closed instead in the head.
+    # cat=(((CUSTOM_EXTKEY)))/110/005; type=boolean; label=Move JavaScript to footer: If checked all included JavaScript files will be included before body tag is closed instead in the head.
     moveJsFromHeaderToFooter = 1
 
 
     # LIBRARIES & FRAMEWORKS
-    # cat=t3template/120/001; type=string; label=jQuery: If you want to include the jQuery via the t3template Extension, then you can enter the number of the jQuery Version you like to include.
+    # cat=(((CUSTOM_EXTKEY)))/120/001; type=string; label=jQuery: If you want to include the jQuery via the (((CUSTOM_EXTKEY))) Extension, then you can enter the number of the jQuery Version you like to include.
     jquery =
 
-    # cat=t3template/120/002; type=boolean; label=Force jQuery include to top: If checked the jQuery will be included as first element before the body tag close.
+    # cat=(((CUSTOM_EXTKEY)))/120/002; type=boolean; label=Force jQuery include to top: If checked the jQuery will be included as first element before the body tag close.
     jquery_forceOnTop = 1
 
-    # cat=t3template/120/003; type=string; label=jQuery mmenu: If you want to include the jQuery mmenu via the t3template Extension, then you can enter the number of the jQuery mmenu Version you like to include.
+    # cat=(((CUSTOM_EXTKEY)))/120/003; type=string; label=jQuery mmenu: If you want to include the jQuery mmenu via the (((CUSTOM_EXTKEY))) Extension, then you can enter the number of the jQuery mmenu Version you like to include.
     mmenu =
 
-    # cat=t3template/120/004; type=string; label=jQuery matchHeight: If you want to include the jQuery matchHeight via the t3template Extension, then you can enter the number of the jQuery mmenu Version you like to include.
+    # cat=(((CUSTOM_EXTKEY)))/120/004; type=string; label=jQuery matchHeight: If you want to include the jQuery matchHeight via the (((CUSTOM_EXTKEY))) Extension, then you can enter the number of the jQuery mmenu Version you like to include.
     matchheight =
 
-    # cat=t3template/120/005; type=string; label=Font Awesome: If you want to include Font Awesome via the t3template Extension, then you can enter the number of the Font Awesome Version you like to include.
+    # cat=(((CUSTOM_EXTKEY)))/120/005; type=string; label=Font Awesome: If you want to include Font Awesome via the (((CUSTOM_EXTKEY))) Extension, then you can enter the number of the Font Awesome Version you like to include.
     fontawesome =
 
 
 
     # OPTIONS
-    # cat=t3template/130/001; type=string; label=Google Analytics: If you want to use Google Analytics, enter here your Tracking-Code like this: UA-00000000-0
+    # cat=(((CUSTOM_EXTKEY)))/130/001; type=string; label=Google Analytics: If you want to use Google Analytics, enter here your Tracking-Code like this: UA-00000000-0
     googleanalytics =
 
 
 
     # IMPORTANT PAGES
-    # cat=t3template/140/001; type=int+; label=Error 404 page (Page ID):
+    # cat=(((CUSTOM_EXTKEY)))/140/001; type=int+; label=Error 404 page (Page ID):
     error404 = 2
 
-    # cat=t3template/140/002; type=int+; label=Legal/Conditions page (Page ID):
+    # cat=(((CUSTOM_EXTKEY)))/140/002; type=int+; label=Legal/Conditions page (Page ID):
     legal = 3
 
-    # cat=t3template/140/003; type=int+; label=Meta menu (Page ID)
+    # cat=(((CUSTOM_EXTKEY)))/140/003; type=int+; label=Meta menu (Page ID)
     metamenu = 4
 
-    # cat=t3template/140/004; type=int+; label=Footer menu (Page ID)
+    # cat=(((CUSTOM_EXTKEY)))/140/004; type=int+; label=Footer menu (Page ID)
     footermenu = 5
 
 
 
     # CUSTOMER INFORMATIONS
-    # cat=t3template/150/001; type=string; label=Company Name:
+    # cat=(((CUSTOM_EXTKEY)))/150/001; type=string; label=Company Name:
     companyname = (((CUSTOM_COMPANYNAME)))
 
-    # cat=t3template/150/002; type=options[,sole-proprietorship,limited-liability-company,limited,corporation,incorporated,general-partnership,limited-partnership,association,club,foundation,cooperative]; label=Legal form: [(empty = no legal form), Sole Proprietorship, LLC, LTD., Corp., Inc., OG, KG, Association, Club, Foundation, co-op]
+    # cat=(((CUSTOM_EXTKEY)))/150/002; type=options[,sole-proprietorship,limited-liability-company,limited,corporation,incorporated,general-partnership,limited-partnership,association,club,foundation,cooperative]; label=Legal form: [(empty = no legal form), Sole Proprietorship, LLC, LTD., Corp., Inc., OG, KG, Association, Club, Foundation, co-op]
     legalform = (((CUSTOM_LEGALFORM)))
 
-    # cat=t3template/150/003; type=options[,Afghanistan,Albania,Algeria,American Samoa,Andorra,Angola,Anguilla,Antarctica,Antigua and Barbuda,Argentina,Armenia,Aruba,Australia,Austria,Azerbaijan,Bahamas,Bahrain,Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bermuda,Bhutan,Bolivia,Bosnia and Herzegovina,Botswana,Bouvet Island,Brazil,British Antarctic Territory,British Indian Ocean Territory,British Virgin Islands,Brunei,Bulgaria,Burkina Faso,Burundi,Cambodia,Cameroon,Canada,Canton and Enderbury Islands,Cape Verde,Cayman Islands,Central African Republic,Chad,Chile,China,Christmas Island,Cocos [Keeling] Islands,Colombia,Comoros,Congo - Brazzaville,Congo - Kinshasa,Cook Islands,Costa Rica,Croatia,Cuba,Cyprus,Czech Republic,Côte d’Ivoire,Denmark,Djibouti,Dominica,Dominican Republic,Dronning Maud Land,East Germany,Ecuador,Egypt,El Salvador,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Falkland Islands,Faroe Islands,Fiji,Finland,France,French Guiana,French Polynesia,French Southern Territories,French Southern and Antarctic Territories,Gabon,Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Greenland,Grenada,Guadeloupe,Guam,Guatemala,Guernsey,Guinea,Guinea-Bissau,Guyana,Haiti,Heard Island and McDonald Islands,Honduras,Hong Kong SAR China,Hungary,Iceland,India,Indonesia,Iran,Iraq,Ireland,Isle of Man,Israel,Italy,Jamaica,Japan,Jersey,Johnston Island,Jordan,Kazakhstan,Kenya,Kiribati,Kuwait,Kyrgyzstan,Laos,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein,Lithuania,Luxembourg,Macau SAR China,Macedonia,Madagascar,Malawi,Malaysia,Maldives,Mali,Malta,Marshall Islands,Martinique,Mauritania,Mauritius,Mayotte,Metropolitan France,Mexico,Micronesia,Midway Islands,Moldova,Monaco,Mongolia,Montenegro,Montserrat,Morocco,Mozambique,Myanmar [Burma],Namibia,Nauru,Nepal,Netherlands,Netherlands Antilles,Neutral Zone,New Caledonia,New Zealand,Nicaragua,Niger,Nigeria,Niue,Norfolk Island,North Korea,North Vietnam,Northern Mariana Islands,Norway,Oman,Pacific Islands Trust Territory,Pakistan,Palau,Palestinian Territories,Panama,Panama Canal Zone,Papua New Guinea,Paraguay,People's Democratic Republic of Yemen,Peru,Philippines,Pitcairn Islands,Poland,Portugal,Puerto Rico,Qatar,Romania,Russia,Rwanda,Réunion,Saint Barthélemy,Saint Helena,Saint Kitts and Nevis,Saint Lucia,Saint Martin,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Samoa,San Marino,Saudi Arabia,Senegal,Serbia,Serbia and Montenegro,Seychelles,Sierra Leone,Singapore,Slovakia,Slovenia,Solomon Islands,Somalia,South Africa,South Georgia and the South Sandwich Islands,South Korea,Spain,Sri Lanka,Sudan,Suriname,Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,São Tomé and Príncipe,Taiwan,Tajikistan,Tanzania,Thailand,Timor-Leste,Togo,Tokelau,Tonga,Trinidad and Tobago,Tunisia,Turkey,Turkmenistan,Turks and Caicos Islands,Tuvalu,U.S. Minor Outlying Islands,U.S. Miscellaneous Pacific Islands,U.S. Virgin Islands,Uganda,Ukraine,Union of Soviet Socialist Republics,United Arab Emirates,United Kingdom,United States,Unknown or Invalid Region,Uruguay,Uzbekistan,Vanuatu,Vatican City,Venezuela,Vietnam,Wake Island,Wallis and Futuna,Western Sahara,Yemen,Zambia,Zimbabwe,Åland Islands]; label=Country:
+    # cat=(((CUSTOM_EXTKEY)))/150/003; type=options[,Afghanistan,Albania,Algeria,American Samoa,Andorra,Angola,Anguilla,Antarctica,Antigua and Barbuda,Argentina,Armenia,Aruba,Australia,Austria,Azerbaijan,Bahamas,Bahrain,Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bermuda,Bhutan,Bolivia,Bosnia and Herzegovina,Botswana,Bouvet Island,Brazil,British Antarctic Territory,British Indian Ocean Territory,British Virgin Islands,Brunei,Bulgaria,Burkina Faso,Burundi,Cambodia,Cameroon,Canada,Canton and Enderbury Islands,Cape Verde,Cayman Islands,Central African Republic,Chad,Chile,China,Christmas Island,Cocos [Keeling] Islands,Colombia,Comoros,Congo - Brazzaville,Congo - Kinshasa,Cook Islands,Costa Rica,Croatia,Cuba,Cyprus,Czech Republic,Côte d’Ivoire,Denmark,Djibouti,Dominica,Dominican Republic,Dronning Maud Land,East Germany,Ecuador,Egypt,El Salvador,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Falkland Islands,Faroe Islands,Fiji,Finland,France,French Guiana,French Polynesia,French Southern Territories,French Southern and Antarctic Territories,Gabon,Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Greenland,Grenada,Guadeloupe,Guam,Guatemala,Guernsey,Guinea,Guinea-Bissau,Guyana,Haiti,Heard Island and McDonald Islands,Honduras,Hong Kong SAR China,Hungary,Iceland,India,Indonesia,Iran,Iraq,Ireland,Isle of Man,Israel,Italy,Jamaica,Japan,Jersey,Johnston Island,Jordan,Kazakhstan,Kenya,Kiribati,Kuwait,Kyrgyzstan,Laos,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein,Lithuania,Luxembourg,Macau SAR China,Macedonia,Madagascar,Malawi,Malaysia,Maldives,Mali,Malta,Marshall Islands,Martinique,Mauritania,Mauritius,Mayotte,Metropolitan France,Mexico,Micronesia,Midway Islands,Moldova,Monaco,Mongolia,Montenegro,Montserrat,Morocco,Mozambique,Myanmar [Burma],Namibia,Nauru,Nepal,Netherlands,Netherlands Antilles,Neutral Zone,New Caledonia,New Zealand,Nicaragua,Niger,Nigeria,Niue,Norfolk Island,North Korea,North Vietnam,Northern Mariana Islands,Norway,Oman,Pacific Islands Trust Territory,Pakistan,Palau,Palestinian Territories,Panama,Panama Canal Zone,Papua New Guinea,Paraguay,People's Democratic Republic of Yemen,Peru,Philippines,Pitcairn Islands,Poland,Portugal,Puerto Rico,Qatar,Romania,Russia,Rwanda,Réunion,Saint Barthélemy,Saint Helena,Saint Kitts and Nevis,Saint Lucia,Saint Martin,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Samoa,San Marino,Saudi Arabia,Senegal,Serbia,Serbia and Montenegro,Seychelles,Sierra Leone,Singapore,Slovakia,Slovenia,Solomon Islands,Somalia,South Africa,South Georgia and the South Sandwich Islands,South Korea,Spain,Sri Lanka,Sudan,Suriname,Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,São Tomé and Príncipe,Taiwan,Tajikistan,Tanzania,Thailand,Timor-Leste,Togo,Tokelau,Tonga,Trinidad and Tobago,Tunisia,Turkey,Turkmenistan,Turks and Caicos Islands,Tuvalu,U.S. Minor Outlying Islands,U.S. Miscellaneous Pacific Islands,U.S. Virgin Islands,Uganda,Ukraine,Union of Soviet Socialist Republics,United Arab Emirates,United Kingdom,United States,Unknown or Invalid Region,Uruguay,Uzbekistan,Vanuatu,Vatican City,Venezuela,Vietnam,Wake Island,Wallis and Futuna,Western Sahara,Yemen,Zambia,Zimbabwe,Åland Islands]; label=Country:
     country = (((CUSTOM_COUNTRY)))
 
-    # cat=t3template/150/004; type=string; label=City:
+    # cat=(((CUSTOM_EXTKEY)))/150/004; type=string; label=City:
     city = (((CUSTOM_CITY)))
 
-    # cat=t3template/150/005; type=string; label=Postal code:
+    # cat=(((CUSTOM_EXTKEY)))/150/005; type=string; label=Postal code:
     zip = (((CUSTOM_ZIP)))
 
-    # cat=t3template/150/006; type=boolean; label=Country code: Show country code before zip (example: CH-3000)
+    # cat=(((CUSTOM_EXTKEY)))/150/006; type=boolean; label=Country code: Show country code before zip (example: CH-3000)
     countrycode = 1
 
-    # cat=t3template/150/007; type=string; label=Street:
+    # cat=(((CUSTOM_EXTKEY)))/150/007; type=string; label=Street:
     street = (((CUSTOM_STREET)))
 
-    # cat=t3template/150/008; type=string; label=Street number:
+    # cat=(((CUSTOM_EXTKEY)))/150/008; type=string; label=Street number:
     streetnr = (((CUSTOM_STREETNR)))
 
-    # cat=t3template/150/009; type=string; label=Street number suffix:
+    # cat=(((CUSTOM_EXTKEY)))/150/009; type=string; label=Street number suffix:
     streetnrsuffix = (((CUSTOM_SUFFIX)))
 
-    # cat=t3template/150/010; type=string; label=Phone:
+    # cat=(((CUSTOM_EXTKEY)))/150/010; type=string; label=Phone:
     phone = (((CUSTOM_PHONE)))
 
-    # cat=t3template/150/011; type=string; label=Mobile:
+    # cat=(((CUSTOM_EXTKEY)))/150/011; type=string; label=Mobile:
     mobilephone = (((CUSTOM_MOBILEPHONE)))
 
-    # cat=t3template/150/012; type=string; label=Fax:
+    # cat=(((CUSTOM_EXTKEY)))/150/012; type=string; label=Fax:
     fax = (((CUSTOM_FAX)))
 
-    # cat=t3template/150/013; type=string; label=E-Mail:
+    # cat=(((CUSTOM_EXTKEY)))/150/013; type=string; label=E-Mail:
     email = (((CUSTOM_EMAIL)))
 
 
 
     # CUSTOMER FILES
-    # cat=t3template/160/001; type=string; label=Logo: SVG
-    svglogo = /typo3conf/ext/t3template/Resources/Public/Images/logo.svg
+    # cat=(((CUSTOM_EXTKEY)))/160/001; type=string; label=Logo: SVG
+    svglogo = /typo3conf/ext/(((CUSTOM_EXTKEY)))/Resources/Public/Images/logo.svg
 
-    # cat=t3template/160/002; type=string; label=: PNG
-    pnglogo = /typo3conf/ext/t3template/Resources/Public/Images/logo.png
+    # cat=(((CUSTOM_EXTKEY)))/160/002; type=string; label=: PNG
+    pnglogo = /typo3conf/ext/(((CUSTOM_EXTKEY)))/Resources/Public/Images/logo.png
 }

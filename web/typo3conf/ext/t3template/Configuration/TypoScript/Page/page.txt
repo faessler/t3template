@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -24,7 +24,7 @@ page {
         viewport = width=device-width, initial-scale=1
 
         // SEO
-        publisher = {plugin.t3template.companyname} {LLL:EXT:t3template/Resources/Private/Language/locallang.xlf:tx_t3template.{$plugin.t3template.legalform}}
+        publisher = {$plugin.(((CUSTOM_EXTKEY))).companyname} {LLL:EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Language/locallang.xlf:legalform.{$plugin.(((CUSTOM_EXTKEY))).legalform}}
         description.data = page:description
         keywords.data = page:keywords
 
@@ -40,7 +40,7 @@ page {
             99 {
                 field = title
                 insertData = 1
-                noTrimWrap = |<title>|&nbsp;&#124; {$plugin.t3template.companyname} {LLL:EXT:t3template/Resources/Private/Language/locallang.xlf:tx_t3template.{$plugin.t3template.legalform}}</title>|
+                noTrimWrap = |<title>|&nbsp;&#124; {$plugin.(((CUSTOM_EXTKEY))).companyname} {LLL:EXT:(((CUSTOM_EXTKEY)))/Resources/Private/Language/locallang.xlf:legalform.{$plugin.(((CUSTOM_EXTKEY))).legalform}}</title>|
             }
         }
     }
@@ -51,7 +51,7 @@ page {
 // ************************************ //
 // GOOGLE ANALYTICS
 // ************************************ //
-[globalString = LIT:{$plugin.t3template.googleanalytics}=UA-*]
+[globalString = LIT:{$plugin.(((CUSTOM_EXTKEY))).googleanalytics}=UA-*]
     page {
         footerData {
             99 = TEXT
@@ -63,7 +63,7 @@ page {
 					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 					})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-					ga('create', '{$plugin.t3template.googleanalytics}', 'auto');
+					ga('create', '{$plugin.(((CUSTOM_EXTKEY))).googleanalytics}', 'auto');
 					ga('send', 'pageview');
 
 				</script>

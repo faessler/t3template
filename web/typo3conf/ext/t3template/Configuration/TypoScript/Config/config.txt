@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -45,29 +45,29 @@ config  {
     noPageTitle = 1
 
     # MOVE JAVASCRIPTS TO FOOTER
-    moveJsFromHeaderToFooter = {$plugin.t3template.moveJsFromHeaderToFooter}
+    moveJsFromHeaderToFooter = {$plugin.(((CUSTOM_EXTKEY))).moveJsFromHeaderToFooter}
 
     # COMPRESS AND MERGE CSS & JS FILES
-    compressCss = {$plugin.t3template.compressCss}
-    concatenateCss = {$plugin.t3template.concatenateCss}
-    compressJs = {$plugin.t3template.compressJs}
-    concatenateJs = {$plugin.t3template.concatenateJs}
+    compressCss = {$plugin.(((CUSTOM_EXTKEY))).compressCss}
+    concatenateCss = {$plugin.(((CUSTOM_EXTKEY))).concatenateCss}
+    compressJs = {$plugin.(((CUSTOM_EXTKEY))).compressJs}
+    concatenateJs = {$plugin.(((CUSTOM_EXTKEY))).concatenateJs}
 
     # EMAIL SPAM PROTECTION
-    spamProtectEmailAddresses = {$plugin.t3template.spamProtectEmailAddresses}
-    spamProtectEmailAddresses_atSubst = {$plugin.t3template.spamProtectEmailAddresses_atSubst}
+    spamProtectEmailAddresses = {$plugin.(((CUSTOM_EXTKEY))).spamProtectEmailAddresses}
+    spamProtectEmailAddresses_atSubst = {$plugin.(((CUSTOM_EXTKEY))).spamProtectEmailAddresses_atSubst}
 
     # REMOVE SPACE CONSUMING COMMENTS
-    disablePrefixComment = {$plugin.t3template.disablePrefixComment}
+    disablePrefixComment = {$plugin.(((CUSTOM_EXTKEY))).disablePrefixComment}
 
     # ACTIVE CACHE
-    no_cache = {$plugin.t3template.no_cache}
+    no_cache = {$plugin.(((CUSTOM_EXTKEY))).no_cache}
 
     # ADMIN PANEL
-    admPanel = {$plugin.t3template.admPanel}
+    admPanel = {$plugin.(((CUSTOM_EXTKEY))).admPanel}
 
     # EXCEPTIONS HANDLER
-    contentObjectExceptionHandler = {$plugin.t3template.contentObjectExceptionHandler}
+    contentObjectExceptionHandler = {$plugin.(((CUSTOM_EXTKEY))).contentObjectExceptionHandler}
 }
 
 
@@ -75,7 +75,7 @@ config  {
 // ************************************ //
 // DEVELOPMENT MODUS
 // ************************************ //
-[globalVar = LIT:0<{$plugin.t3template.developmentMode}]
+[globalVar = LIT:0<{$plugin.(((CUSTOM_EXTKEY))).developmentMode}]
     config {
         debug = 1
         contentObjectExceptionHandler = 0

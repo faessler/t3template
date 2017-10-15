@@ -5,7 +5,7 @@
 //   |_| |___/ |_| |___|_|  |_|_| |____/_/ \_\_| |___|
 //
 //
-// EXT: T3Template (t3template)
+// EXT: (((CUSTOM_EXTKEY_UPPER_CAMEL_CASE))) ((((CUSTOM_EXTKEY))))
 // VER: 0.0.1
 //
 // LIC: MIT License
@@ -18,45 +18,45 @@
 // INCLUDE GLOBAL CSS & JS
 // ************************************ //
 // Include jQuery if constant has a valid value
-[globalString = LIT:{$plugin.t3template.jquery}=*.*.*]
+[globalString = LIT:{$plugin.(((CUSTOM_EXTKEY))).jquery}=*.*.*]
     page {
         includeJSFooterlibs {
-            jQuery = https://code.jquery.com/jquery-{$plugin.t3template.jquery}.min.js
+            jQuery = https://code.jquery.com/jquery-{$plugin.(((CUSTOM_EXTKEY))).jquery}.min.js
             jQuery.external = 1
-            jQuery.forceOnTop = {$plugin.t3template.jquery_forceOnTop}
+            jQuery.forceOnTop = {$plugin.(((CUSTOM_EXTKEY))).jquery_forceOnTop}
         }
     }
 [global]
 
 // Include jQuery mmenu if constant has a valid value
-[globalString = LIT:{$plugin.t3template.mmenu}=*.*.*]
+[globalString = LIT:{$plugin.(((CUSTOM_EXTKEY))).mmenu}=*.*.*]
     page {
         includeJSFooterlibs {
-            mmenu = https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/{$plugin.t3template.mmenu}/jquery.mmenu.all.js
+            mmenu = https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/{$plugin.(((CUSTOM_EXTKEY))).mmenu}/jquery.mmenu.all.js
             mmenu.external = 1
         }
         includeCSSLibs {
-            mmenu = https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/{$plugin.t3template.mmenu}/jquery.mmenu.all.css
+            mmenu = https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/{$plugin.(((CUSTOM_EXTKEY))).mmenu}/jquery.mmenu.all.css
             mmenu.external = 1
         }
     }
 [global]
 
 // Include jQuery matchHeight if constant has a valid value
-[globalString = LIT:{$plugin.t3template.matchheight}=*.*.*]
+[globalString = LIT:{$plugin.(((CUSTOM_EXTKEY))).matchheight}=*.*.*]
     page {
         includeJSFooterlibs {
-            matchHeight = https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/{$plugin.t3template.matchheight}/jquery.matchHeight.js
+            matchHeight = https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/{$plugin.(((CUSTOM_EXTKEY))).matchheight}/jquery.matchHeight.js
             matchHeight.external = 1
         }
     }
 [global]
 
 // Include Font Awesome if constant has a valid value
-[globalString = LIT:{$plugin.t3template.fontawesome}=*.*.*]
+[globalString = LIT:{$plugin.(((CUSTOM_EXTKEY))).fontawesome}=*.*.*]
     page {
         includeCSSLibs {
-            fontAwesome = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{$plugin.t3template.fontawesome}/css/font-awesome.css
+            fontAwesome = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{$plugin.(((CUSTOM_EXTKEY))).fontawesome}/css/font-awesome.css
             fontAwesome.external = 1
         }
     }
